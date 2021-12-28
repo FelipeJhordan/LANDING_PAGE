@@ -13,7 +13,7 @@ describe('<MenuLink />', () => {
 
   it('should render a new tab', () => {
     renderTheme(
-      <MenuLink link="http://localhost" newTabe={true}>
+      <MenuLink link="http://localhost" newTab={true}>
         Children
       </MenuLink>,
     );
@@ -25,7 +25,7 @@ describe('<MenuLink />', () => {
 
   it('should render a new tab', () => {
     renderTheme(
-      <MenuLink link="http://localhost" newTabe={true}>
+      <MenuLink link="http://localhost" newTab={true}>
         Children
       </MenuLink>,
     );
