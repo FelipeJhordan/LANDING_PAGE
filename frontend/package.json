@@ -63,5 +63,15 @@
     "prettier": "^2.5.1",
     "prop-types": "^15.8.0",
     "webpack": "^5.65.0"
+  },
+ "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/**/*mock*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/styles/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ]
   }
 }
