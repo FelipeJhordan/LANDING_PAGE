@@ -1,6 +1,6 @@
 import P from 'prop-types';
-import { SectionContainer } from '../components/SectionContainer';
-import { TextComponent } from '../components/TextComponent';
+import { SectionContainer } from '../SectionContainer';
+import { TextComponent } from '../TextComponent';
 import * as Styled from './styles';
 
 export const Footer = ({ html }) => {
