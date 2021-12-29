@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.34.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -64,7 +65,7 @@
     "prop-types": "^15.8.0",
     "webpack": "^5.65.0"
   },
- "jest": {
+  "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/*.{js,jsx,ts,tsx}",
