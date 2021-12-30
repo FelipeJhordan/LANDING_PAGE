@@ -11,10 +11,16 @@ export const Container = styled.div`
 export const Grid = styled.div`
   ${({ theme }) =>
     css`
+      counter-reset: grid-counter;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: ${theme.spacings.large}
-      counter-reset: grid-counter;
+      overflow: hidden;
+      width: 100%;
+
+      @media ${theme.media.lteMedium} {
+        grid-template-columns: 1fr;
+      }
     `}
 `;
 export const GridElement = styled.div`
@@ -27,7 +33,7 @@ export const GridElement = styled.div`
       counter-increment: grid-counter;
       content: counter(grid-counter);
       position: absolute;
-      font-size: 7rem;
+      font-size: 6.5rem;
       top: -3rem;
       left: -5rem;
       transform: rotate(5deg);
