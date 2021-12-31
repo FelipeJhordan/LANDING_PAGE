@@ -12,7 +12,7 @@ export const mapSections = (sections = []) => {
         return mapTextGrid(section);
       }
       if (image_grid.length > 0) {
-        // return mapImageGrid(section);
+        return mapImageGrid(section);
       }
     }
 

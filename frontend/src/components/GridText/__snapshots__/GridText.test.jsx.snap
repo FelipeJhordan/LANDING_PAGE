@@ -5,6 +5,7 @@ exports[`<GridText /> should render with background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -26,7 +27,7 @@ exports[`<GridText /> should render with background 1`] = `
 .c4 {
   color: #FFFFFF;
   font-size: 6.4rem;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .c9 {
@@ -47,7 +48,8 @@ exports[`<GridText /> should render with background 1`] = `
   counter-reset: grid-counter;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-  gap: 3.2rem overflow:hidden;
+  gap: 3.2rem;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -157,6 +159,7 @@ exports[`<GridText /> should render without background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -176,7 +179,7 @@ exports[`<GridText /> should render without background 1`] = `
 .c4 {
   color: #0A1128;
   font-size: 6.4rem;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .c9 {
@@ -197,7 +200,8 @@ exports[`<GridText /> should render without background 1`] = `
   counter-reset: grid-counter;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-  gap: 3.2rem overflow:hidden;
+  gap: 3.2rem;
+  overflow: hidden;
   width: 100%;
 }
 
