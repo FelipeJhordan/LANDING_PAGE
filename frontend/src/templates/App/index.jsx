@@ -11,7 +11,7 @@ import { Loading } from '../Loading';
 import { PageNotFound } from '../PageNotFound';
 
 import { mapData } from '../../api/map-data';
-import { mockBase } from '../Base/mock';
+import dataJson from '../../api/data.json';
 
 import { url, defaultSlug, siteName } from '../../config';
 
@@ -23,9 +23,17 @@ function Home() {
     const slug = pathname ? pathname : defaultSlug;
     const load = async () => {
       try {
-        const data = await fetch(url + slug);
-        const json = await data.json();
-        const pageData = mapData('filled', json.data);
+        const data = await new Promise((r) => {
+          let dataFiltered;
+          setTimeout(() => {
+            dataFiltered = dataJson.filter((page) => {
+              return page.slug === slug;
+            });
+            r(dataFiltered);
+          }, 1000);
+        });
+        console.log(data);
+        const pageData = mapData('filled', data);
         setData(pageData[0]);
       } catch (e) {
         setData(undefined);
