@@ -16,8 +16,9 @@ Aprimorar o conhecimento de react, especificamente utilizando jest e styled comp
 ## Processo
 Primeiramente foi criado a camada de serviços, utilizando docker com um container utilizando uma imagem de postgresql.
 No front o fluxo de criação foi feita na ordem de criação do component/visualização unitária pelo storybook, teste unitário utilizando o jest e após a criação de todos os components ecessários foram acoplados em um template.
-## Site
 Os commits foram feitos de forma semantica, utilizando um titulo haver com o propósito do commit
+
+## Site
 https://naughty-brahmagupta-32d8ac.netlify.app/ ( Pode demorar 20 segundos - 30 segundos pra ser carregado devido ao plano free )
 ## Instalacão
 ### Para rodar o projeto é necessário:
